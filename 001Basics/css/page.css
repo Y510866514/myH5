@@ -1,0 +1,69 @@
+body,page{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	}
+page{
+	font-size: 150px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 60%;	
+}
+#c{
+	background-color: lightgreen;
+	animation: c 10s infinite;
+}
+#x{
+	background-color: red;
+	animation: x 10s infinite;
+}
+#q{
+	background-image: url(孤独.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 740px;
+	animation: q 10s infinite;
+}
+#d{
+	background-color: black;
+	color: white;
+	animation: d 10s infinite;
+}
+#z{
+	font-size: 30px;
+	display: block;
+	animation: z 10s infinite;
+}
+@keyframes z{
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	80%{opacity: 100;}
+	90%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes c{
+	0%{opacity: 0;}
+	20%{opacity: 100;}
+	40%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes x{
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	40%{opacity: 100;}
+	60%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes q{
+	0%{opacity: 0;}
+	40%{opacity: 0;}
+	60%{opacity: 100;}
+	80%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes d{
+	0%{opacity: 0;}
+	60%{opacity: 0;}
+	80%{opacity: 100;}
+	100%{opacity: 0;}
+}
