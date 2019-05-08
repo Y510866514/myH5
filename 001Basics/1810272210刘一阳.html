@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>再见，我的青春</title>
+		<style type="text/css">
+			#demo{
+				animation: demo 4s infinite;
+			}
+			#a{
+				animation: a 2s infinite;
+			}
+			#b{
+				animation: b 2s infinite;
+			}
+			#c{
+				animation: c 2s infinite;
+			}
+			#d{
+				animation: d 1s infinite;
+			}
+			@keyframes demo{
+				0%{color: red;}
+				25%{color: orange;}
+				50%{color: yellow;}
+				75%{color: green;}
+				100%{color: mediumpurple;}
+			}
+			@keyframes a{
+				from{color: red;}
+				to{color: orange;}
+			}
+			@keyframes b{
+				from{color: yellow;}
+				to{color: green;}
+			}
+			@keyframes c{
+				from{color: blue;}
+				to{color: black;}
+			}
+			@keyframes d{
+				from{color: purple;}
+				to{color: pink;}
+			}
+		</style>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<p id="a"></p>
+		<p id="b"></p>
+		<p id="c"></p>
+		<p id="d"></p>
+	</body>
+	<script>
+		var goods = new Array();
+		goods[0] = "Nike背包";
+		goods[1] = "Adidas运动衫";
+		goods[2] = "李宁运动鞋";
+		goods[3] = "Kappa外套";
+		goods[4] = "361°腰包";
+		document.getElementById("demo").innerHTML="本次打折的商品有：";
+		for(const value of goods) {
+			document.getElementById("a").innerHTML=document.getElementById("a").innerHTML+value+"<br/>";
+			document.write();
+		}
+		console.log(goods.shift());
+		console.log(goods.push("Adidas运动裤"));
+		for(const value of goods) {
+			document.getElementById("b").innerHTML=document.getElementById("b").innerHTML+value+"<br/>";
+		}
+		console.log(goods.splice(1,1,"特步运动鞋"));
+		for(const value of goods) {
+			document.getElementById("c").innerHTML=document.getElementById("c").innerHTML+value+"<br/>";
+		}
+		for(const value of goods) {
+			document.getElementById("d").innerHTML=document.getElementById("d").innerHTML+value+",";
+		}
+	</script>
+</html>
